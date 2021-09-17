@@ -1,4 +1,4 @@
-# name, date, book_id
+name, date, book_id
 "John", "2020-01-14", 2
 "Sue", "2020-02-10", 1
 "Frank", "2020-05-14", 0
