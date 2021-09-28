@@ -1,0 +1,8 @@
+db.runCommand( {
+   collMod: "inventory",
+   validator: { $or:  
+      { available_copies: { $gt: 0 } }
+   }
+} )
+
+db.inventory.insertOne({ title: "A Good Book", author: "Bob", published_date: new Date(), publisher: "Joe's Publishing", available_copies: 1 })
