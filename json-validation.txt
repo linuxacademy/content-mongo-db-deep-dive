@@ -20,7 +20,7 @@ db.createCollection("inventory", {
                bsonType: "string",
                description: "must be a string and is required"
             },
-	    avaiable_copies: {
+	    available_copies: {
 	       bsonType: "int",
                description: "must be an int and is required"
             }	    
