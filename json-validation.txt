@@ -1,0 +1,32 @@
+db.createCollection("inventory", {
+   validator: {
+      $jsonSchema: {
+         bsonType: "object",
+         required: [ "title", "author", "published_date", "publisher", "available_copies"  ],
+         properties: {
+            title: {
+               bsonType: "string",
+               description: "must be a string and is required"
+            },
+            author: {
+               bsonType: "string",
+               description: "must be a string and is required"
+            },
+            published_date: {
+               bsonType: "date",
+               description: "must be a date and is required"
+            },
+            publisher: {
+               bsonType: "string",
+               description: "must be a string and is required"
+            },
+	    avaiable_copies: {
+	       bsonType: "int",
+               description: "must be an int and is required"
+            }	    
+
+
+         }
+      }
+   }
+})
